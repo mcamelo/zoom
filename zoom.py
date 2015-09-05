@@ -45,7 +45,6 @@ def line(x0, y0, x1, y1):
   '''Draws a line from x0, y0 to x1, y1.
   '''
 
-
 def putsprite(sprite, x, y):
   '''Draws the sprite, starting at the given x and y coordinates.
   '''
@@ -59,41 +58,74 @@ def show():
 # Audio
 ################
 
-def makeclip(data):
+class Clip:
   '''
+  '''
+
+
+def makeclip(data):
+  '''Creates a playable audio clip from the given data block.
   '''
 
 
 def playclip(clip):
-  '''
+  '''Plays the given clip once.
   '''
 
 def loopclip(clip):
-  '''
+  '''Loop the given clip repeatedly.
   '''
 
 ################
 # Input
 ################
 
-def getkey():
+class KeyEvent:
   '''
+  '''
+  def code():
+  def down():
+  def up():
+
+def getkey():
+  '''Gets a next key event in the queue.
   '''
 
 ################
 # Collision
 ################
 
-def setcollisionmask(data, name):
-  '''
+class CollisionEvent:
+  def name1():
+  def name2():
+
+def makecollisionmask(data, name):
+  '''Creates a collision mask from the given datablock. 
   '''
 
 
 def putmask(mask, x, y):
-  '''
+  '''Positions the collision mask in the arena.
   '''
 
 
 def getcollisions():
+  '''Returns the next detected collision in the queue.
   '''
+
+################
+# Timer
+################
+
+class TimerEvent:
+  def name():
+
+
+def settimer(secs, name):
+  '''Sets a new timer.
+  '''
+
+
+def gettimer():
+  '''Returns the next timer event in the queue.
   '''
