@@ -1,6 +1,9 @@
+################
+# RUNTIME
+################
 
 def init(w,h):
-  '''Initializes the backbuffer with given width and height.
+  '''Initializes zoom, resizing the backbuffer to the given width and height.
   '''
 
 ################
@@ -19,6 +22,14 @@ def getdata(name):
 ################
 # Screen
 ################
+
+def doublebuffer():
+  '''Toogles double buffer mode on and off (defaults to off). When not in double
+  buffer mode, all drawing primitives are executed to the visible screen buffer
+  for immediate viewing by the user. Ideal for experimenting within the Python
+  interactive console.
+  '''
+
 
 def makesprite(data):
   '''Makes a sprite object out of the given data block.
