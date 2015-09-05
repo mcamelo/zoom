@@ -8,7 +8,12 @@ def init(w,h):
 
 
 def run():
-  '''Returns the number of seconds since the last frame or false if game has ended.
+  '''Returns true if game is running, false if game has ended.
+  '''
+
+
+def time():
+  '''Returns the number of seconds between the beginning of the last frame and this. 
   '''
 
 ################
