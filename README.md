@@ -7,6 +7,8 @@ Zoom is a simple game engine inspired in the hobby 8-bit computers of the early 
 
 ```
   from zoom import *
+  doublebuffer()
+  init(50, 50)
   while run():
     while timer = gettimer():
       # process timer
