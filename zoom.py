@@ -6,6 +6,11 @@ def init(w,h):
   '''Initializes zoom, resizing the backbuffer to the given width and height.
   '''
 
+
+def run():
+  '''Returns the number of seconds since the last frame or false if game has ended.
+  '''
+
 ################
 # Resources
 ################
