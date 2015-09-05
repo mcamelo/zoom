@@ -22,6 +22,7 @@ def getdata(name):
 
 def makesprite(data):
   '''Makes a sprite object out of the given data block.
+  '''
 
 
 def target(buffer):
