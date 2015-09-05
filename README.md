@@ -13,7 +13,7 @@ Zoom is a simple game engine inspired in the hobby 8-bit computers of the early 
   while run():
     while timer = gettimer():
       # process timer
-    while collision = getcollision()
+    while collision = getcollision():
       # process collision
     while key = getkey():
       # process key
