@@ -47,9 +47,8 @@ def makesprite(data):
 
 
 def target(buffer):
-  '''Sets the target buffer for drawing. By default, the
-  target buffer is the backbuffer, but sprites are buffers
-  and are valid targets too.
+  '''Sets the target buffer for drawing. By default, the target buffer
+  is the backbuffer, but sprites are buffers and are valid targets too.
   '''
 
 
@@ -67,8 +66,10 @@ def line(x0, y0, x1, y1):
   '''Draws a line from x0, y0 to x1, y1.
   '''
 
+
 def putsprite(sprite, x, y):
-  '''Draws the sprite, starting at the given x and y coordinates.
+  '''Draws the sprite, putting the top-left corner at the given x and y
+  coordinates.
   '''
 
 
